@@ -1,4 +1,5 @@
-# RealeBlock: Leveraging Blockchain for Secure Real Estate Transactions
+# RealeBlock: Leveraging ICP Blockchain for Secure Real Estate Transactions
+# Building on ICP (Internet Computer Protocol)
 
 ##Canister
 
