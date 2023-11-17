@@ -1,0 +1,109 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Home Page */
+  
+  .homepage {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 16px;
+  }
+  
+  .services-section {
+    margin-bottom: 20px;
+  }
+  
+  .services-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .services-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .services-section li {
+    margin-bottom: 10px;
+  }
+  
+  .services-section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .call-to-action {
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .call-to-action button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Sign-In/Sign-Up */
+  
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
