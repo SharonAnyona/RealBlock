@@ -1,4 +1,4 @@
-steps for success and commands that help in this application development
+#steps for success and commands that help in this application development
 project! This example project will help you to deploy your first canister (application) to the Internet Computer (IC) decentralized cloud. It is a simple getter/setter canister. You can always refer to [The Azle Book](https://demergent-labs.github.io/azle/) for more in-depth documentation.
 
 `dfx` is the tool you will use to interact with the IC locally and on mainnet. If you don't already have it installed:
