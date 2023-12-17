@@ -27,4 +27,4 @@ RealeBlock emerges as a transformative solution to combat fraudulent activities 
 
 ## Conclusion
 
-RealeBlock revolutionizes the real estate landscape by addressing the critical challenge of fraudulent activities. By leveraging blockchain technology to create a secure and transparent ecosystem, RealeBlock safeguards the interests of buyers, enhances trust, and paves the way for a more secure and trustworthy real estate market.
+RealeBlock revolutionizes the real estate landscape by addressing the critical challenge of fraudulent activities. By leveraging blockchain technology to create a secure and transparent ecosystem, RealeBlock safeguards the interests of buyers, enhances trust, and paves the way for a more secure and trustworthy real estate market places.
