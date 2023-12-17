@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "azle": "^0.18.6"
+    "@dfinity/agent": "^0.15.6",
+    "@dfinity/candid": "^0.15.6",
+    "azle": "^0.17.1",
+    "uuid": "^9.0.0"
   }
 }
