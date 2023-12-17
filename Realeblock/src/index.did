@@ -1,0 +1,28 @@
+type Land = record {
+  owner : principal;
+  createdAt : nat64;
+  landId : text;
+  uniqueIdentifier : text;
+  updatedAt : opt nat64;
+  location : text;
+};
+type LandPayload = record { uniqueIdentifier : text; location : text };
+type Transaction = record {
+  toOwner : principal;
+  createdAt : nat64;
+  landId : text;
+  fromOwner : principal;
+  transactionId : text;
+};
+type _AzleResult = variant { Ok : Land; Err : text };
+type _AzleResult_1 = variant { Ok : vec Land; Err : text };
+type _AzleResult_2 = variant { Ok : vec Transaction; Err : text };
+service : () -> {
+  addLand : (LandPayload) -> (_AzleResult);
+  deleteLand : (text) -> (_AzleResult);
+  getLand : (text) -> (_AzleResult) query;
+  getLands : () -> (_AzleResult_1) query;
+  getTransactions : () -> (_AzleResult_2) query;
+  transferLand : (text, principal) -> (_AzleResult);
+  updateLand : (text, LandPayload) -> (_AzleResult);
+}
