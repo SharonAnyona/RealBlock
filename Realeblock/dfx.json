@@ -1,11 +1,13 @@
 {
     "canisters": {
-        "hello": {
+        "reale_block": {
             "type": "custom",
             "main": "src/index.ts",
             "candid": "src/index.did",
-            "build": "npx azle hello",
-            "wasm": ".azle/hello/hello.wasm",
+            "build": "npx azle reale_block",
+            "root":"src",
+            "ts": "src/index.ts",
+            "wasm": ".azle/reale_block/reale_block.wasm",
             "gzip": true
         }
     }
