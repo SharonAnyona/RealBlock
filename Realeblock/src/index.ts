@@ -110,6 +110,16 @@ export function transferLand(landId: string, toOwner: string): Result<Land, stri
         None: () => Result.Err(`Couldn't transfer land with id=${landId}. Land not found`),
     });
 }
+// Export an object with all functions as properties
+export const LandModule = {
+    getLands,
+    getLand,
+    getTransactions,
+    addLand,
+    updateLand,
+    deleteLand,
+    transferLand,
+};
 
 // Workaround to make uuid package work with Azle
 globalThis.crypto = {
