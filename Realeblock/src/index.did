@@ -1,21 +1,17 @@
 type Land = record {
-  owner : text;
+  owner : principal;
   createdAt : nat64;
   landId : text;
   uniqueIdentifier : text;
   updatedAt : opt nat64;
   location : text;
 };
-type LandPayload = record {
-  owner : text;
-  uniqueIdentifier : text;
-  location : text;
-};
+type LandPayload = record { uniqueIdentifier : text; location : text };
 type Transaction = record {
-  toOwner : text;
+  toOwner : principal;
   createdAt : nat64;
   landId : text;
-  fromOwner : text;
+  fromOwner : principal;
   transactionId : text;
 };
 type _AzleResult = variant { Ok : Land; Err : text };
@@ -27,6 +23,6 @@ service : () -> {
   getLand : (text) -> (_AzleResult) query;
   getLands : () -> (_AzleResult_1) query;
   getTransactions : () -> (_AzleResult_2) query;
-  transferLand : (text, text) -> (_AzleResult);
+  transferLand : (text, principal) -> (_AzleResult);
   updateLand : (text, LandPayload) -> (_AzleResult);
 }
