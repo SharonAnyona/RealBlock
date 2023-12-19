@@ -1,3 +1,4 @@
+
 {
     "canisters": {
         "realblock": {
@@ -5,9 +6,10 @@
             "main": "src/index.ts",
             "candid": "src/index.did",
             "build": "npx azle realblock",
+            "root":"src",
+            "ts": "src/index.ts",
             "wasm": ".azle/realblock/realblock.wasm",
             "gzip": true
         }
     }
 }
-
