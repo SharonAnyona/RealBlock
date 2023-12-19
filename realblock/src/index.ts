@@ -1,6 +1,13 @@
-import {$query, $update, Record, StableBTreeMap, Vec, Result, nat64, ic, Opt, match, Principal } from 'azle';
+import {query as $query, update as $update, Record, StableBTreeMap, Vec, Result, nat64, ic, Opt, Principal } from 'azle';
 import { v4 as uuidv4 } from 'uuid';
 
+const match = <T, U>(value: T | undefined, patterns: { Some: (value: T) => U, None: () => U }): U => {
+    if (value !== undefined) {
+        return patterns.Some(value);
+    } else {
+        return patterns.None();
+    }
+};
 type Land = Record<{
     landId: string;
     location: string;
@@ -170,6 +177,8 @@ export const LandModule = {
     deleteLand,
     transferLand,
 };
+
+export default CanisterMethods;
 // Workaround to make uuid package work with Azle
 globalThis.crypto = {
     getRandomValues: () => {
